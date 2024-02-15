@@ -8,7 +8,6 @@
 <mapper namespace="dao.UserMapper">
 	<cache />
 	
-	
 	<select id="getOne" resultType="uVo">
 		select * from user where userid=#{userid} and password=#{password}
 	</select>

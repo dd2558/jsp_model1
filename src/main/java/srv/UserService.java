@@ -1,7 +1,10 @@
 package srv;
 
-import model.UserVO;
+import java.util.Map;
 
-public interface UserService {
-  UserVO getOne(String userid);
+import model.UserDTO;
+
+public interface UserService  {
+
+  UserDTO getOne(Map<String,String> loginInfo);
 }

@@ -1,5 +1,7 @@
 package dao;
 
+import java.util.Map;
+
 import org.apache.ibatis.session.SqlSession;
 
 import model.UserVO;
@@ -17,10 +19,10 @@ public class UserMapperDAO implements UserMapper {
    }
    
   @Override
-  public UserVO getOne(String userid) {
+  public UserVO getOne(Map<String,String> loginInfo) {
     
     
-    return mp().getOne(userid) ;
+    return mp().getOne(loginInfo) ;
   }
 
 }
